@@ -8,6 +8,8 @@ body{
     align-items: center;
     color: white;
     padding: 80px 0;
+    z-index: 3;
+    
 }
 #heading{
 
@@ -36,7 +38,7 @@ body{
     justify-content: center;
 
     max-width: 900px;
-
+    
 }
 .infoBox{
     display: flex;
@@ -55,40 +57,63 @@ body{
     transition: 200ms;
 }
 
+.timelineContainer{
+    
+    position: relative;
+    background-color: #2d362b;
+}
+
+.spacer{
+    aspect-ratio: 900/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+.layer1{
+    background-image: url('./layer1.svg');
+}
+
+
+.TimeLineLine{
+    position: relative;
+    top: -800px;
+    background-color: #171a17;
+    margin-left: 100px;
+    z-index: 2;
+    width: 10px;
+    height: 1000px;
+}
+
+
+
 .TimeLine{
-    display: block;
-    justify-content: left;
-
-
+    width: 100%;
+    margin:auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #2d362b;
+    color: #92a392;
+    z-index: 1;
 }
 .SingleTimeline{
-    display: grid;
-    grid-template-columns: 1fr 1fr 4fr;
-
-
-}
-.LinePointContainer{
-
-    margin: 0 auto;
     display: flex;
-}
-.LinePoint{
-    align-items: center;
+    justify-content: center;
 
-    width: 20px;
-    height: 20px;
-    background-color: darkgray;
-    border-radius: 8px;
 
 }
+
 .TimeLineDate{
     font-family: "Lucida Console", "Courier New", monospace;
     font-size: 30px;
-
+    transform: rotate(-90deg);
 
 }
 .TimeLineText{
 
     width: 400px;
-
+    border-right: 50px;
 }
