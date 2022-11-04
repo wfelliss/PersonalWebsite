@@ -54,3 +54,41 @@ body{
     box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.75) , inset 1px 1px 1px 0px rgba(38,38,38,1);
     transition: 200ms;
 }
+
+.TimeLine{
+    display: block;
+    justify-content: left;
+
+
+}
+.SingleTimeline{
+    display: grid;
+    grid-template-columns: 1fr 1fr 4fr;
+
+
+}
+.LinePointContainer{
+
+    margin: 0 auto;
+    display: flex;
+}
+.LinePoint{
+    align-items: center;
+
+    width: 20px;
+    height: 20px;
+    background-color: darkgray;
+    border-radius: 8px;
+
+}
+.TimeLineDate{
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 30px;
+
+
+}
+.TimeLineText{
+
+    width: 400px;
+
+}
